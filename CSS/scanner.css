@@ -1,0 +1,14 @@
+*{
+    text-align: center;
+}
+video{
+    width: 40%;
+    margin: 0 30vw;
+}
+hr {
+    margin-top: 32px;
+}
+
+div {
+    margin-bottom: 16px;
+}
