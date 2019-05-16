@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: "Bebas";
+    src: url(../Fonts/BEBAS.ttf);
+}
+
+h3{
+    font-family: Bebas;
+    color: red;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.nav{
+    margin-top: 70px;
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 20px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+
+.fa-facebook {
+    background: red;
+    color: white;
+}
+
+.fa-twitter {
+    background: red;
+    color: white;
+}
+.fa-instagram {
+    background: red;
+    color: white;
+}
+.social{
+    text-align: center;
+    margin-top: 150px;
+}
