@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Bebas";
+    src: url(/Font/Bebas-Regular.tff);
+}
+
+body {
+    margin: 0;
+}
+
+p {
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    margin: 1vh 4vh;
+}
+
+h2 {
+    font-family: "Bebas";
+    font-size: 4em;
+    margin: 3vh 4vh;
+    margin-bottom: 1vh;
+}
+
+h3 {
+    margin: 1vh 4vh;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-align: center;
+    color: rgb(248, 46, 40)
+}
+
+header {
+    display: inline-block;
+    width: 100%
+}
+
+header img {
+    margin-left: 4vh;
+    margin-top: 2vh;
+}
+#menu{
+    float: right;
+    margin: 3vh 4vh;
+}
+
+
