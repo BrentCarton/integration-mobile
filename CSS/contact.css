@@ -7,24 +7,27 @@ body {
     margin: 0;
 }
 
-p {
-
-    font-family: 'Pathway Gothic One', sans-serif;
-    margin: 1vh 4vh;
-}
+h1 {}
 
 h2 {
     font-family: "Bebas";
-    font-size: 4em;
+    font-size: 2em;
     margin: 3vh 4vh;
     margin-bottom: 1vh;
 }
+h3{
+    margin: 0 4vh;
+}
 
-h3 {
-    margin: 1vh 4vh;
+h4{
     font-family: 'Pathway Gothic One', sans-serif;
-    text-align: center;
-    color: rgb(248, 46, 40)
+    margin: 0;
+    margin-top: 10px;
+}
+
+p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    margin: 0vh 4vh;
 }
 
 header {
@@ -36,9 +39,60 @@ header img {
     margin-left: 4vh;
     margin-top: 2vh;
 }
-#menu{
+
+#menu {
     float: right;
     margin: 3vh 4vh;
 }
+.mail{
+    font-size: 20px;
+    margin-top: 2vh;
+    color: red;
+}
 
 
+
+
+input[type=text], select, textarea {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #6e45c7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(248, 46, 40);
+    padding: 5px 25px;
+    border-radius: 30px;
+}
+
+
+.formulier  {
+    margin: 4vh;
+}

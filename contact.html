@@ -6,12 +6,31 @@
     <link rel="stylesheet" type="text/css" href="CSS/contact.css" />
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <a href="index.html"><img src="Images/LogoFS.png" alt="Logo" width="30%"></a>
         <a href="nav.html"><img src="Images/Hamburger.png" alt="Hamburger" width="10%" id="menu"></a>
     </header>
     <h2>Contact</h2>
-    <p>info@ehb.be</p>
+    <p class="mail"><a href="mailto:info@ehb.be">info@ehb.be</a> <br> 02 523 37 37</p>
+
+    <div class="formulier">
+        <form>
+            <h4>Voornaam</h4>
+            <input type="text" id="fname" name="firstname" placeholder="Voornaam">
+            <h4>Achternaam</h4>
+            <input type="text" id="lname" name="lastname" placeholder="Achternaam">
+            <h4>E-mail</h4>
+            <input type="text" id="email" name="email" placeholder="E-mail">
+            <h4>Opmerking</h4>
+            <textarea id="subject" name="subject" placeholder="Bericht/Opmerking" style="height: 200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <h2>Waar</h2>
+    <h3>Zinnema</h3>
+    <p>Rue de Veeweyde 24 <br> 1070 Anderlecht</p>
 </body>
 </html>
