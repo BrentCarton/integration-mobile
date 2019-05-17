@@ -17,7 +17,8 @@ h1{
     font-size: 8em;
     position: absolute;
     z-index: 1;
-    padding-top: 2vh;
+    padding-top: 1vh;
+    margin-top: 10vh
 }
 
 
@@ -27,13 +28,13 @@ h1{
     width: 75%;
     margin-left: 12.5%;
     margin-right: 12.5%;
-    margin-top: 22vh; 
+    margin-top: 25vh; 
 }
 
 #detectedCode{
     position: absolute;
     z-index: 1;
-    padding-top: 93vh;
+    padding-top: 85vh;
     font-family: "Bebas";
     font-size: 3em;
 }
@@ -46,7 +47,7 @@ h1{
     width: 150px;
     position: absolute;
     z-index: 1;
-    margin-top: 83vh;
+    margin-top: 75vh;
     left:  42.4vw;   
 }
 /* CLEARFIX */
