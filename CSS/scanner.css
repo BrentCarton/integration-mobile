@@ -12,6 +12,7 @@ h1{
     font-family: "Bebas";
     font-size: 4em;
     position: absolute;
+    z-index: 1;
 }
 
 
@@ -23,7 +24,7 @@ h1{
 }
 
 video{
-    height: 100vh;
+
 }
 /* CLEARFIX */
 .clearfix::after {
