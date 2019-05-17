@@ -18,6 +18,9 @@ a{
    text-decoration: none; 
 }
 
+#back-button{
+    height: 100%;
+}
 
 a.fa {
     padding: 55px;
