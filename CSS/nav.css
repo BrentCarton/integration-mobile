@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: "Bebas";
-    src: url(../Font/Bebas-regular.ttf);
+    src: url(../Font/Bebas-Regular.ttf);
 }
 
 h3{
@@ -19,7 +19,7 @@ img{
 }
 .fa {
     padding: 15px;
-    font-size: 30px;
+    font-size: 20px;
     width: 20px;
     border-radius: 100px;
     text-align: center;

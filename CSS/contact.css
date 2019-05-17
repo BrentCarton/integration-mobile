@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Bebas";
-    src: url(../Font/Bebas-Regular.tff);
+    src: url(../Font/Bebas-Regular.ttf);
 }
 
 body {
@@ -113,7 +113,31 @@ input[type=submit] {
     margin: 4vh;
 }
 
-.social {
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    border-radius: 100px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+}
+
+.fa-facebook {
+    background: red;
+    color: white;
+}
+
+.fa-twitter {
+    background: red;
+    color: white;
+}
+.fa-instagram {
+    background: red;
+    color: white;
+}
+.social{
     text-align: center;
     margin-top: 70px;
+    margin-bottom:50px;
 }
