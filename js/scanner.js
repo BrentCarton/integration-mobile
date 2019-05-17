@@ -12,6 +12,6 @@ const scanner = new QrScanner(video, result => setResult(camQrResult, result));
 scanner.start();
 
 // ###### Opens the webpage #######
-//function openPage(result){
-//window.open(result, "_self");
-//}
+function openPage(result){
+window.open(result, "_self");
+}
