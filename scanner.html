@@ -6,15 +6,16 @@
         <link rel="stylesheet" href="CSS/scanner.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="module" src="js/scanner.js"></script>
+        <script src="js/back-button.js"></script>
     </head>
     <body class="clearfix">
         <h1>QR-code</h1>
+        <p id="detectedCode">Detected QR code: <br>
+        <span id="cam-qr-result">None</span></p>
+        <a href="#" id="back-button"><img src="Images/back.png" alt="back button" id="back"></a>
         <div class="qr-scanner"> 
             <img src="Images/qr-scanner.png" alt="qr-scanner" id="scanner">
             <video muted playsinline id="qr-video"></video>
         </div>
-
-        <p id="detectedCode">Detected QR code:
-        <span id="cam-qr-result">None</span></p>
     </body>
 </html>
