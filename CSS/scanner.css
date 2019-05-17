@@ -23,8 +23,12 @@ h1{
     margin-top: 22vh; 
 }
 
-video{
-
+#detectedCode{
+    position: absolute;
+    z-index: 1;
+    padding-top: 65vh;
+    font-family: "Bebas";
+    font-size: 2em;
 }
 /* CLEARFIX */
 .clearfix::after {
