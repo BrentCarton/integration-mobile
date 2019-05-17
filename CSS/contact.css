@@ -6,6 +6,11 @@
 body {
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color:red;
+}
+
 
 h1 {}
 
@@ -85,6 +90,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
+    font-family: 'Pathway Gothic One', sans-serif;
     background-color: white;
     color: black;
     border: 1px solid rgb(248, 46, 40);
@@ -94,5 +100,6 @@ input[type=submit] {
 
 
 .formulier  {
+    font-family: 'Pathway Gothic One', sans-serif;
     margin: 4vh;
 }
