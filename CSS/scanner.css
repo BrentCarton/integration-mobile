@@ -8,27 +8,46 @@
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 h1{
     font-family: "Bebas";
-    font-size: 4em;
+    font-size: 8em;
     position: absolute;
     z-index: 1;
+    padding-top: 2vh;
 }
 
 
 #scanner{
     position: absolute;
     z-index: 1;
-    width: 100%;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
     margin-top: 22vh; 
 }
 
 #detectedCode{
     position: absolute;
     z-index: 1;
-    padding-top: 65vh;
+    padding-top: 93vh;
     font-family: "Bebas";
-    font-size: 2em;
+    font-size: 3em;
+}
+
+#back-button{
+    text-align: center;
+}
+
+#back{
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 83vh;
+    left:  42.4vw;   
 }
 /* CLEARFIX */
 .clearfix::after {
