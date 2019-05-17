@@ -6,6 +6,7 @@
 
 h3{
     font-family: Bebas;
+    font-size: 2em;
     color: red;
     text-align: center;
     margin-top: 40px;
@@ -18,7 +19,7 @@ img{
     margin-top: 70px;
 }
 .fa {
-    padding: 15px;
+    padding: 25px;
     font-size: 20px;
     width: 20px;
     border-radius: 100px;
