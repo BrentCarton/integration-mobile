@@ -1,12 +1,20 @@
 *{
     text-align: center;
 }
-video{
-    width: 40%;
-    margin: 0 30vw;
+body{
+    height: 100vh;
+    margin: 0;
 }
-hr {
-    margin-top: 32px;
+#scanner{
+    width: 75%;
+    position: absolute;
+    z-index: 1;
+    margin: 40vh 40vw;
+}
+
+video{
+    height: 50vh;
+    margin-top: 35vh
 }
 
 div {
