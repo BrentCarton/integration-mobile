@@ -115,14 +115,14 @@ input[type=submit] {
     margin: 4vh;
 }
 
-.fa {
-    padding: 15px;
-    font-size: 20px;
-    width: 20px;
-    border-radius: 100px;
+a.fa {
+    padding: 55px;
+    font-size: 50px;
+    width: 50px;
+    border-radius: 90px;
     text-align: center;
     text-decoration: none;
-    margin: 10px 10px;
+    margin: 10px 30px;
 }
 
 .fa-facebook {
