@@ -6,7 +6,7 @@
 
 h3{
     font-family: Bebas;
-    font-size: 3.5em;
+    font-size: 60px;
     color: red;
     text-align: center;
     margin-top: 40px;
@@ -23,13 +23,13 @@ a{
 }
 
 a.fa {
-    padding: 55px;
-    font-size: 50px;
-    width: 50px;
-    border-radius: 90px;
+    padding: 20px;
+    font-size: 90px;
+    width: 90px;
+    border-radius: 100px;
     text-align: center;
     text-decoration: none;
-    margin: 10px 30px;
+    margin: 10px 50px;
 }
 
 .fa-facebook {
@@ -47,5 +47,6 @@ a.fa {
 }
 .social{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 90px;
+    margin-bottom: 30px;
 }
