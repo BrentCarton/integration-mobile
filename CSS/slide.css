@@ -1,0 +1,92 @@
+/*================================================================
+                            SLIDESHOWS
+================================================================*/
+.mySlides {
+    display: inline-block;
+    width: 90vw;
+    margin: 0% 5% 0% 5%;
+}
+.slideshow-een img {
+    vertical-align: middle;
+    width: 100%;
+}
+.slideshow-een {
+    margin: 0;
+    overflow: auto;
+    white-space: nowrap;
+    display: none; 
+}
+
+.mySlidesTwee {
+    display: inline-block;
+    width: 90vw;
+    margin: 0% 5% 0% 5%;
+}
+.slideshow-twee img {
+    vertical-align: middle;
+    width: 100%;
+}
+.slideshow-twee {
+    margin: 0;
+    overflow: auto;
+    white-space: nowrap;
+    display: none; 
+}
+
+.mySlidesDrie {
+    display: inline-block;
+    width: 90vw;
+    margin: 0% 5% 0% 5%;
+}
+.slideshow-drie img {
+    vertical-align: middle;
+    width: 100%;
+}
+.slideshow-drie {
+    margin: 0;
+    overflow: auto;
+    white-space: nowrap;
+    display: none; 
+}
+
+/*================================================================
+                           
+================================================================*/
+
+
+h1, h2, p {
+    white-space: normal;
+}
+.numbertext {
+    color: white;
+    font-size: 30px;
+    padding: 2%;
+    background-color: #ff0000;
+    font-family: Bebas;
+}
+slideshow-knoppen-een{
+    display: none;
+}
+slideshow-knoppen-twee{
+    display: none;
+}
+slideshow-knoppen-drie{
+    display: none;
+}
+.dot {
+    cursor: pointer;
+    margin: 5% 2% 2% 2%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:active,
+.dot:hover{
+    background-color: #ff0000;
+}
+
