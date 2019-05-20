@@ -3,8 +3,8 @@ QrScanner.WORKER_PATH = './js/qr-scanner-worker.min.js';
 const video = document.getElementById('qr-video');
 const camQrResult = document.getElementById('cam-qr-result');
 function setResult(label, result) {
-label.textContent = result;
-openPage(result);
+    label.textContent = result;
+    openPage(result);
 };
 
 // ####### Web Cam Scanning #######
@@ -13,5 +13,5 @@ scanner.start();
 
 // ###### Opens the webpage #######
 function openPage(result){
-window.open(result, "_self");
+    window.open(result, "_self");
 }
