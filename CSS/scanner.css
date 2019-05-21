@@ -39,16 +39,8 @@ h1{
     width: 150px;
     position: absolute;
     z-index: 1;
-    margin-top: 80vh;
+    margin-top: 75vh;
     left:  42.4vw;   
-}
-
-.blackBar{
-    background-color: black;
-    height: 30vw;
-    position: absolute;
-    z-index: 0.99;
-    margin-top: 78vh
 }
 
 /* CLEARFIX */
