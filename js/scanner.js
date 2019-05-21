@@ -3,7 +3,6 @@ QrScanner.WORKER_PATH = './js/qr-scanner-worker.min.js';
 const video = document.getElementById('qr-video');
 const camQrResult = document.getElementById('cam-qr-result');
 function setResult(label, result) {
-    label.textContent = result;
     openPage(result);
 };
 
