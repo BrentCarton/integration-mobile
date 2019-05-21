@@ -32,10 +32,7 @@ h1{
 
 .blackBar{
     background-color: black;
-    height: 300px;
-    position: absolute;
-    z-index: 1;
-    margin-top: 73vh
+    height: 20vh;
 }
 
 #back-button{
