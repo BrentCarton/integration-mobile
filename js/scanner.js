@@ -5,7 +5,7 @@ const camQrResult = document.getElementById('cam-qr-result');
 
 
 // ####### Web Cam Scanning #######
-const scanner = new QrScanner(video, result => openPage(result),1080);
+const scanner = new QrScanner(video, result => openPage(result));
 scanner.start();
 
 // ###### Opens the webpage #######
