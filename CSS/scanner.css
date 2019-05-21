@@ -22,7 +22,7 @@ h1{
 }
 
 video{
-    height: 100vh;
+    height: 110vh;
 }
 
 #scanner{
@@ -50,7 +50,7 @@ video{
     width: 150px;
     position: absolute;
     z-index: 1;
-    margin-top: 70vh;
+    margin-top: 80vh;
     left:  42.4vw;   
 }
 /* CLEARFIX */
