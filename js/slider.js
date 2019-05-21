@@ -5,7 +5,8 @@ $(function () {
     EersteBachelor();
     TweedeBachelor();
     DerdeBachelor();
-
+    Connect();
+    
     function Start() {
         $(".slideshow-een").show();
         $(".bachelorEen").css("background-color", "#ff0000");
@@ -89,8 +90,15 @@ $(function () {
             $(this).css("color", "white");
         });
     }
-            /*============================================
-                                Bollekes
-            ============================================*/
-            $(".mySlides:visible").attr(".dot")
+    
+    function Connect(){
+        $(".usb-off img").click(function (){
+            $(".usb-off").hide();
+            $(".usb-on").show();
+        })
+        $(".usb-on img").click(function (){
+            $(".usb-on").hide();
+            $(".usb-off").show();
+        })
+    }
 });

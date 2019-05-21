@@ -1,6 +1,21 @@
 /*================================================================
                             SLIDESHOWS
 ================================================================*/
+.usb-off{
+    width: 10%;
+    margin-top: 27px;
+    margin-right: 0%;
+    float: right;
+}
+
+.usb-on{
+    width: 10%;
+    margin-top: 27px;
+    margin-right: 0%;
+    float: right;
+    display: none;
+}
+
 .mySlides {
     display: inline-block;
     width: 90vw;
