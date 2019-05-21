@@ -75,7 +75,7 @@ slideshow-knoppen-drie{
 }
 .dot {
     cursor: pointer;
-    margin: 5% 2% 2% 2%;
+    margin:0% 2% 2%;
     height: 30px;
     width: 30px;
     text-align: center;
