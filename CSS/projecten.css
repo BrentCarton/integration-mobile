@@ -24,6 +24,13 @@ input[type=submit] {
     margin-bottom: 1%;
 }
 
+h1{
+    font-family: Bebas;
+    font-size: 70px;
+    color:red;
+    
+}
+
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
