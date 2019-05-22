@@ -1,5 +1,5 @@
 /*================================================================
-                            SLIDESHOWS
+SLIDESHOWS
 ================================================================*/
 .usb-off{
     width: 10%;
@@ -20,16 +20,18 @@
     display: inline-block;
     width: 90vw;
     margin: 0% 5% 0% 5%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 .slideshow-een img {
-    vertical-align: middle;
     width: 100%;
 }
 .slideshow-een {
     margin: 0;
-    overflow: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
     white-space: nowrap;
-    display: none; 
 }
 
 .mySlidesTwee {
@@ -65,7 +67,7 @@
 }
 
 /*================================================================
-                           
+
 ================================================================*/
 
 
@@ -79,6 +81,12 @@ h1, h2, p {
     background-color: #ff0000;
     font-family: Bebas;
 }
+
+.knoppenBachelor .bachelorEen{
+    background-color: #ff0000;
+    color: white;
+}
+
 slideshow-knoppen-een{
     display: none;
 }
