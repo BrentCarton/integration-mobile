@@ -115,31 +115,30 @@ input[type=submit] {
     margin: 4vh;
 }
 
-a.fa {
+footer{
+    width: 100%;
+    background-color: red;
+    color: white;
     padding: 20px;
-    font-size: 90px;
-    width: 90px;
-    border-radius: 100px;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px 50px;
+    margin-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+footer a{
+    color: white;
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: Bebas;
 }
 
-.fa-facebook {
-    background: red;
-    color: white;
+footer img{
+    width: 6%;
+    float: right;
+    margin-right: 50px;
 }
 
-.fa-twitter {
-    background: red;
-    color: white;
-}
-.fa-instagram {
-    background: red;
-    color: white;
-}
-.social{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+.logo{
+    width: 25%;
+    float: left;
+    margin-left: 50px;
 }
