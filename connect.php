@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Connect</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Index.css" />
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="stylesheet" type="text/css" href="CSS/newnav.css" />
     <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
