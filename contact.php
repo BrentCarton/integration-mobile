@@ -11,10 +11,29 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="Images/LogoFS.png" alt="Logo" width="30%"></a>
-        <a href="nav.html"><img src="Images/Hamburger.png" alt="Hamburger" width="10%" id="menu"></a>
-    </header>
+    <label>
+        <input type='checkbox'>
+        <span class='menu'>
+            <span class='hamburger'></span>
+        </span>
+        <ul>
+            <li>
+                <a href='index.html'>Home</a>
+            </li>
+            <li>
+                <a href='projecten.html'>Projecten</a>
+            </li>
+            <li>
+                <a href='connect.html'>Connect</a>
+            </li>
+            <li>
+                <a href='contact.php'>Contact</a>
+            </li>
+            <li>
+                <a href='scanner.html'>QR-Code Scanner</a>
+            </li>
+        </ul>
+    </label>
     <h2>Contact</h2>
     <p class="mail"><a href="mailto:info@ehb.be">info@ehb.be</a> <br> 02 523 37 37</p>
 
@@ -51,7 +70,7 @@
             <h4>Uw email-adress</h4>
             <input type="mail" placeholder="mail" name="mail">
             -->
-            
+
             <h4>Voornaam</h4>
             <input type="text" placeholder="Voornaam" name="voornaam">
             <h4>Achternaam</h4>
