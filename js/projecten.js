@@ -134,11 +134,17 @@ $(function () {
             console.log(id);
             $(".on"+id).hide();
             $(".off"+id).show();
-//            deleteCookie();
+            deleteCookie();
         })
     }
     
     function setCookie(id){
-        Cookies.set('id',id);
+        var cookie = "id" + id;
+        Cookies.set(cookie,id);
+    }
+    
+    function deleteCookie(id){
+        var cookie = "id" + id;
+        Cookies.remove(cookie);
     }
 });
