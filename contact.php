@@ -25,7 +25,7 @@
             if (isset($_POST["submit"]) ) {
 
             /*$mail= $_POST["mail"];*/
-            $mail= $_POST["attila.tolnai170@gmail.com"];
+            $mail= "attila.tolnai170@gmail.com";
                 
             $voornaam= $_POST["voornaam"];
             $achternaam= $_POST["achternaam"];
