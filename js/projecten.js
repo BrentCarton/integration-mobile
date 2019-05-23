@@ -10,11 +10,23 @@ $(function () {
             EersteBachelor(data);
             TweedeBachelor(data);
             DerdeBachelor(data);
+            startSelecties();
             Connect();
         }).fail(function (a,b){
             console.log(a,b);
         });
     });
+    
+    function startSelecties(){
+        var cookies = Cookies.get();
+        for(var i in cookies){
+            var id = cookies[i];
+            console.log(id);
+            $(".off"+id).hide();
+            $(".on"+id).show();
+        }
+    }
+    
     function Start(data) {
         $(".slideshow-een").show();
         var projecten1 = data[0];
@@ -134,17 +146,18 @@ $(function () {
             console.log(id);
             $(".on"+id).hide();
             $(".off"+id).show();
-            deleteCookie();
+            deleteCookie(id);
         })
     }
     
     function setCookie(id){
         var cookie = "id" + id;
-        Cookies.set(cookie,id);
+        Cookies.set(cookie,id,{expires:999});
     }
     
     function deleteCookie(id){
         var cookie = "id" + id;
+        console.log(cookie);
         Cookies.remove(cookie);
     }
 });
