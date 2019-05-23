@@ -88,8 +88,7 @@ label a {
     color: #000;
     text-decoration: none;
 }
-
-h1 {
+label h1 {
     position: absolute;
     top: 50%;
     left: 50%;

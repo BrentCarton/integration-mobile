@@ -2,7 +2,7 @@ $(function () {
     console.log("ready!");
     $(function () {
         $.ajax({
-            url : "../data/projecten.json",
+            url : "data/projecten.json",
             dataType : "json"
         }).done(function(data){
             console.log("check");
