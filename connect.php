@@ -62,17 +62,17 @@
         ?>
 
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
-            <h2 class="rood">Contact</h2>
-            <!--
+            <h2 class="rood">Connect</h2>
+
+           
             <h4>Uw email-adress</h4>
             <input type="mail" placeholder="mail" name="mail">
-            -->
 
             <h4>Voornaam</h4>
             <input type="text" placeholder="Voornaam" name="voornaam">
             <h4>Achternaam</h4>
             <input type="text" placeholder="Achternaam" name="achternaam">
-            <p><input type="submit" name="submit" value="Verstuur mail"></p>
+            <p><input type="submit" name="submit" value="Stuur gegevens naar mij"></p>
         </form>
         <?php
                 }
