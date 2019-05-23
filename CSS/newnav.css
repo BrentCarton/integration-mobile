@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+
 *,
 *:before,
 *:after {
@@ -20,6 +21,7 @@ label .menu {
     box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
     cursor: pointer;
 }
+
 label .hamburger {
     position: absolute;
     top: 185px;
@@ -32,7 +34,9 @@ label .hamburger {
     transform-origin: center;
     transition: .5s ease-in-out;
 }
-label .hamburger:after, label .hamburger:before {
+
+label .hamburger:after,
+label .hamburger:before {
     transition: .5s ease-in-out;
     content: "";
     position: absolute;
@@ -41,36 +45,45 @@ label .hamburger:after, label .hamburger:before {
     height: 100%;
     background: red;
 }
+
 label .hamburger:before {
     top: -25px;
 }
+
 label .hamburger:after {
     bottom: -25px;
 }
+
 label input {
     display: none;
 }
+
 label input:checked + .menu {
     box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
     border-radius: 0;
 }
+
 label input:checked + .menu .hamburger {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 label input:checked + .menu .hamburger:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
 }
+
 label input:checked + .menu .hamburger:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
 }
+
 label input:checked + .menu + ul {
     opacity: 1;
 }
+
 label ul {
     z-index: 200;
     position: absolute;
@@ -81,12 +94,14 @@ label ul {
     opacity: 0;
     transition: .25s 0s ease-in-out;
 }
+
 label a {
     margin-bottom: 1em;
     display: block;
     color: #000;
     text-decoration: none;
 }
+
 label h1 {
     position: absolute;
     top: 50%;
@@ -102,7 +117,7 @@ label h1 {
     src: url(../Font/Bebas-Regular.ttf);
 }
 
-ul{
+ul {
     font-family: Bebas;
     font-size: 70px;
     color: red;
@@ -111,6 +126,6 @@ ul{
     list-style-type: none;
 }
 
-a{
-    text-decoration: none; 
+a {
+    text-decoration: none;
 }
