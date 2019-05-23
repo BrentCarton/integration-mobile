@@ -25,7 +25,7 @@ label .hamburger {
     top: 185px;
     left: 20px;
     width: 100px;
-    height: 5px;
+    height: 10px;
     background: red;
     display: block;
     -webkit-transform-origin: center;
@@ -42,10 +42,10 @@ label .hamburger:after, label .hamburger:before {
     background: red;
 }
 label .hamburger:before {
-    top: -10px;
+    top: -25px;
 }
 label .hamburger:after {
-    bottom: -10px;
+    bottom: -25px;
 }
 label input {
     display: none;
