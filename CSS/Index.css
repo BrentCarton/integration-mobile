@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+banner{
+    height:20px;
+
+}
+
 p {
     font-size: 50px;
     font-family: 'Pathway Gothic One', sans-serif;
@@ -49,7 +54,7 @@ header img {
     color: rgb(248, 46, 40)
 }
 footer{
-   
+
     background-color: red;
     color: white;
     padding: 20px;
@@ -75,4 +80,7 @@ footer img{
     float: left;
     margin-left: 50px;
 }
+
+
+
 

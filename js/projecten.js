@@ -10,7 +10,7 @@ $(function () {
             EersteBachelor(data);
             TweedeBachelor(data);
             DerdeBachelor(data);
-            Connect(data);
+            Connect();
         }).fail(function (a,b){
             console.log(a,b);
         });
@@ -21,7 +21,7 @@ $(function () {
         for (var i in projecten1){
             console.log(i);
             $(".slideshow-een").append(
-                "<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on'>    <img src='Images/USB-icon.png'></div>  <div class='usb-off'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten1[i].project+"</h1><h2>"+projecten1[i].student+"</h2><p>"+projecten1[i].pojectbeschrijving+"</p><p>"+projecten1[i].email+"</p><p>"+projecten1[i].telefoonnummer+"</p><p>"+projecten1[i].studie+"</p></div>"
+                "<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten1[i].project+"</h1><h2>"+projecten1[i].student+"</h2><p>"+projecten1[i].pojectbeschrijving+"</p><p>"+projecten1[i].email+"</p><p>"+projecten1[i].telefoonnummer+"</p><p>"+projecten1[i].studie+"</p></div>"
             );
         };
     }
@@ -58,12 +58,13 @@ $(function () {
             for (var i in projecten2){
                 console.log(i);
                 $(".slideshow-twee").append(
-                    "<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on'>    <img src='Images/USB-icon.png'></div><div class='usb-off'><img src='Images/USB-iconZwart.png'   id='"+i+"'></div><h1>"+projecten2[i].project+"</h1><h2>"+projecten2[i].student+"</h2><p>"+projecten2[i].pojectbeschrijving+"</p><p>"+projecten2[i].email+"</p><p>"+projecten2[i].telefoonnummer+"</p><p>"+projecten2[i].studie+"</p></div>"
+                    "<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten2[i].project+"</h1><h2>"+projecten2[i].student+"</h2><p>"+projecten2[i].pojectbeschrijving+"</p><p>"+projecten2[i].email+"</p><p>"+projecten2[i].telefoonnummer+"</p><p>"+projecten2[i].studie+"</p></div>"
                 );
             };
         });
 
         $(".bachelorTwee").click(function () {
+            Connect();
             /*============================================
                                 1STE
             ============================================*/
@@ -93,11 +94,12 @@ $(function () {
             var projecten3 = data[2];
             for (var i in projecten3){
                 console.log(i);
-                $(".slideshow-drie").append("<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on'><img src='Images/USB-icon.png'></div><div class='usb-off'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten3[i].project+"</h1><h2>"+projecten3[i].student+"</h2><p>"+projecten3[i].pojectbeschrijving+"</p><p>"+projecten3[i].email+"</p><p>"+projecten3[i].telefoonnummer+"</p><p>"+projecten3[i].studie+"</p></div>"
+                $(".slideshow-drie").append("<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten3[i].project+"</h1><h2>"+projecten3[i].student+"</h2><p>"+projecten3[i].pojectbeschrijving+"</p><p>"+projecten3[i].email+"</p><p>"+projecten3[i].telefoonnummer+"</p><p>"+projecten3[i].studie+"</p></div>"
                 );
             };
         });
         $(".bachelorDrie").click(function () {
+            Connect();
             /*============================================
                                 1STE
             ============================================*/
@@ -119,18 +121,24 @@ $(function () {
         });
     }
 
-    function Connect(data){
+    function Connect(){
         $(".usb-off img").click(function (){
-            $(".usb-off").hide();
-            $(".usb-on").show();
             var id = this.id;
+            $(".off"+id).hide();
+            $(".on"+id).show();
             console.log(id);
-//            setCookie();
+            setCookie(id);
         })
         $(".usb-on img").click(function (){
-            $(".usb-on").hide();
-            $(".usb-off").show();
+            var id = this.id;
+            console.log(id);
+            $(".on"+id).hide();
+            $(".off"+id).show();
 //            deleteCookie();
         })
+    }
+    
+    function setCookie(id){
+        Cookies.set('id',id);
     }
 });
