@@ -61,6 +61,7 @@ label input {
 label input:checked + .menu {
     box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
     border-radius: 0;
+    height:100%
 }
 
 label input:checked + .menu .hamburger {
