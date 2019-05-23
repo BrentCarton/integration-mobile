@@ -29,7 +29,7 @@ $(function(){
         }
     };
     function tweedeJaar(cookies, projecten2, i){
-        if(cookies[i]>6){
+        if(cookies[i]>6 && cookies[i]<11){
             $(".connect").append("<h2>"+projecten2[cookies[i]].student+"</h2><h3>"+projecten2[cookies[i]].project+"</h3><p>"+projecten2[cookies[i]].email+"</p><p>"+projecten2[cookies[i]].telefoonnummer+"</p><p>"+projecten2[cookies[i]].studie+"</p>");
         }else{
             console.log("Geen 2e jaars aangeduid")
