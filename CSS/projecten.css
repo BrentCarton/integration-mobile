@@ -81,3 +81,8 @@ h1{
         border: 1px solid #ccc;
     }
 }
+.scan{
+    float:right;
+    margin-top:43px;
+    margin-right: 23vw;
+}
