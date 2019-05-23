@@ -51,7 +51,7 @@
             <h4>Uw email-adress</h4>
             <input type="mail" placeholder="mail" name="mail">
             -->
-            
+
             <h4>Voornaam</h4>
             <input type="text" placeholder="Voornaam" name="voornaam">
             <h4>Achternaam</h4>
