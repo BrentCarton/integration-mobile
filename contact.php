@@ -6,6 +6,7 @@
         <title>Contact</title>
         <link rel="stylesheet" href="CSS/contact.css">
         <link rel="stylesheet" type="text/css" href="CSS/newnav.css" />
+          <link rel='icon' href='Images/ehb%20logo%20glitched.png' type='image/x-icon'/ >
         <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
