@@ -45,7 +45,30 @@
     <p class="mailadres"><a href="mailto:info@ehb.be">info@ehb.be</a> <br> 02 523 37 37</p>
 
     <div class="formulier">
+        <?php
+            if (isset($_POST["submit"]) ) {
 
+            /*$mail= $_POST["mail"];*/
+            $mail= "attila.tolnai170@gmail.com";
+                
+            $voornaam= $_POST["voornaam"];
+            $achternaam= $_POST["achternaam"];
+            $email= $_POST["email"];
+            $onderwerp=$_POST["onderwerp"];
+            $bericht=$_POST["bericht"];
+                
+            $submit=$_POST["submit"];
+            $bericht= $bericht;
+
+            if(mail("$mail", $onderwerp, "$bericht", "Content-type: text/html; charset=iso-8859-1" . "\r\n" . "From: $email ")){
+                echo "<p>Uw bericht werd succesvol doorgestuurd, $voornaam $achternaam .</p>";
+            }
+
+            }
+            else {
+            
+        ?>
+        
         <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
             <!--
 <h4>Uw email-adress</h4>
