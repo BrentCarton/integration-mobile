@@ -1,3 +1,4 @@
+//gebasseerd op https://github.com/nimiq/qr-scanner
 import QrScanner from './qr-scanner.min.js';
 QrScanner.WORKER_PATH = './js/qr-scanner-worker.min.js';
 const video = document.getElementById('qr-video');

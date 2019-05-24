@@ -33,7 +33,7 @@ $(function () {
         for (var i in projecten1){
             console.log(i);
             $(".slideshow-een").append(
-                "<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten1[i].project+"</h1><h2>"+projecten1[i].student+"</h2><p>"+projecten1[i].pojectbeschrijving+"</p><p>"+projecten1[i].email+"</p><p>"+projecten1[i].telefoonnummer+"</p><p>"+projecten1[i].studie+"</p></div>"
+                "<div class='mySlides fade' id='"+i+"'><img src='Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten1[i].project+"</h1><h2>"+projecten1[i].student+"</h2><p>"+projecten1[i].pojectbeschrijving+"</p><p>"+projecten1[i].email+"</p><p>"+projecten1[i].telefoonnummer+"</p><p>"+projecten1[i].studie+"</p></div>"
             );
         };
     }
@@ -43,19 +43,19 @@ $(function () {
             /*============================================
                                 1STE
             ============================================*/
-            $(".slideshow-een").show();
+            $(".eerste").show();
             $(this).css("background-color", "#ff0000");
             $(this).css("color", "white");
             /*============================================
                                 2DE
             ============================================*/
-            $(".slideshow-twee").hide();
+            $(".tweede").hide();
             $(".bachelorTwee").css("background-color", "white");
             $(".bachelorTwee").css("color", "#ff0000");
             /*============================================
                                 3DE
             ============================================*/
-            $(".slideshow-drie").hide();
+            $(".derde").hide();
             $(".bachelorDrie").css("background-color", "white");
             $(".bachelorDrie").css("color", "#ff0000");
         });
@@ -70,7 +70,7 @@ $(function () {
             for (var i in projecten2){
                 console.log(i);
                 $(".slideshow-twee").append(
-                    "<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten2[i].project+"</h1><h2>"+projecten2[i].student+"</h2><p>"+projecten2[i].pojectbeschrijving+"</p><p>"+projecten2[i].email+"</p><p>"+projecten2[i].telefoonnummer+"</p><p>"+projecten2[i].studie+"</p></div>"
+                    "<div class='mySlides fade' id='"+i+"'><img src='Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten2[i].project+"</h1><h2>"+projecten2[i].student+"</h2><p>"+projecten2[i].pojectbeschrijving+"</p><p>"+projecten2[i].email+"</p><p>"+projecten2[i].telefoonnummer+"</p><p>"+projecten2[i].studie+"</p></div>"
                 );
             };
         });
@@ -80,19 +80,19 @@ $(function () {
             /*============================================
                                 1STE
             ============================================*/
-            $(".slideshow-een").hide();
+            $(".eerste").hide();
             $(".bachelorEen").css("background-color", "white");
             $(".bachelorEen").css("color", "#ff0000");
             /*============================================
                                 2DE
             ============================================*/
-            $(".slideshow-twee").show();
+            $(".tweede").show();
             $(this).css("background-color", "#ff0000");
             $(this).css("color", "white");
             /*============================================
                                 3DE
             ============================================*/
-            $(".slideshow-drie").hide();
+            $(".derde").hide();
             $(".bachelorDrie").css("background-color", "white");
             $(".bachelorDrie").css("color", "#ff0000");
         });
@@ -106,28 +106,29 @@ $(function () {
             var projecten3 = data[2];
             for (var i in projecten3){
                 console.log(i);
-                $(".slideshow-drie").append("<div class='mySlides fade' id='"+i+"'><img src='../Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten3[i].project+"</h1><h2>"+projecten3[i].student+"</h2><p>"+projecten3[i].pojectbeschrijving+"</p><p>"+projecten3[i].email+"</p><p>"+projecten3[i].telefoonnummer+"</p><p>"+projecten3[i].studie+"</p></div>"
+                $(".slideshow-drie").append("<div class='mySlides fade' id='"+i+"'><img src='Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+projecten3[i].project+"</h1><h2>"+projecten3[i].student+"</h2><p>"+projecten3[i].pojectbeschrijving+"</p><p>"+projecten3[i].email+"</p><p>"+projecten3[i].telefoonnummer+"</p><p>"+projecten3[i].studie+"</p></div>"
                 );
             };
         });
         $(".bachelorDrie").click(function () {
             Connect();
+            
             /*============================================
                                 1STE
             ============================================*/
-            $(".slideshow-een").hide();
+            $(".eerste").hide();
             $(".bachelorEen").css("background-color", "white");
             $(".bachelorEen").css("color", "#ff0000");
             /*============================================
                                 2DE
             ============================================*/
-            $(".slideshow-twee").hide();
+            $(".tweede").hide();
             $(".bachelorTwee").css("background-color", "white");
             $(".bachelorTwee").css("color", "#ff0000");
             /*============================================
                                 3DE
             ============================================*/
-            $(".slideshow-drie").show();
+            $(".derde").show();
             $(this).css("background-color", "#ff0000");
             $(this).css("color", "white");
         });
@@ -149,7 +150,7 @@ $(function () {
             deleteCookie(id);
         })
     }
-    
+    //gebasseerd op https://github.com/js-cookie/js-cookie
     function setCookie(id){
         var cookie = "id" + id;
         Cookies.set(cookie,id,{expires:999});
