@@ -45,6 +45,9 @@
     <p class="mailadres"><a href="mailto:info@ehb.be">info@ehb.be</a> <br> 02 523 37 37</p>
 
     <div class="formulier">
+       
+        <!--Ik heb deze php-code vanuit mijn oude portfolio website genomen die ik in mijn SENSE jaar heb gemaak in Don Bosco Halle schooljaar 2017-2018.-->
+       
         <?php
             if (isset($_POST["submit"]) ) {
 
