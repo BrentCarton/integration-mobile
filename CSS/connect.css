@@ -6,3 +6,24 @@
 footer{
     margin-top: -30px;
 }
+
+h2, h3, p, #mail, #tel{
+   margin: 0; 
+}
+
+h3{
+    text-align: left;
+}
+
+.student{
+    border-bottom-style: solid;
+    border-bottom-color: #404040;
+    border-bottom-width: 0.02px;
+    width: 80vw;
+    margin: 0 10vw;
+    padding-bottom: 20px;
+}
+
+.student h2{
+    margin-top: 30px;
+}

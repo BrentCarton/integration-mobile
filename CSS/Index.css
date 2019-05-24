@@ -12,10 +12,16 @@ banner{
 
 }
 
-p {
+p,#tel,#mail {
+    display: block;
     font-size: 50px;
     font-family: 'Pathway Gothic One', sans-serif;
     margin: 1vh 4vh;
+}
+
+#tel,#mail{
+    color: black;
+    text-decoration: underline;
 }
 
 h2 {
