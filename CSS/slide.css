@@ -63,7 +63,7 @@ SLIDESHOWS
     width: 12px ;
  }
 
-/*scrollbar visible https://stackoverflow.com/questions/22907777/make-scrollbar-visible-in-mobile-browsers en https://www.outsystems.com/forums/discussion/27148/what-if-we-want-the-scroll-option-on-top-of-the-table-like-it-has-at-bottom/*/
+/*gebasseerd op https://stackoverflow.com/questions/22907777/make-scrollbar-visible-in-mobile-browsers en https://www.outsystems.com/forums/discussion/27148/what-if-we-want-the-scroll-option-on-top-of-the-table-like-it-has-at-bottom/*/
  /* Track */
 ::-webkit-scrollbar-track {
    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -75,8 +75,8 @@ SLIDESHOWS
  ::-webkit-scrollbar-thumb {
    -webkit-border-radius: 10px;
    border-radius: 10px;
-   background: #41617D; 
-   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+   background: black; 
+   
  }
 
 .eerste, .tweede, .derde{
@@ -113,5 +113,9 @@ h1, h2, p {
     background-color: #ff0000;
     color: white;
 }
-
-
+.topnav .resultaat a{
+    display: block;
+}
+.resultaat a{
+    color: black;
+}

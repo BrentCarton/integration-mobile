@@ -1,7 +1,6 @@
 //gebasseerd op https://github.com/js-cookie/js-cookie
 
 $(function(){
-    console.log("test");
     var cookies = Cookies.get();
     $.ajax({
         url : "data/projecten.json",

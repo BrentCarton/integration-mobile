@@ -9,10 +9,11 @@
         <link rel="stylesheet" type="text/css" href="CSS/slide.css">
         <link rel="stylesheet" type="text/css" href="CSS/newnav.css" />
         <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
-          <link rel='icon' href='Images/ehb%20logo%20glitched.png' type='image/x-icon'/ >
+        <link rel='icon' href='Images/ehb%20logo%20glitched.png' type='image/x-icon'/ >
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
         <script src="js/projecten.js"></script>
+        <script src="js/searchbar.js"></script>
         <script src="js/nav.js"></script>
 
     </head>
@@ -48,18 +49,24 @@
         </header>
         <div class="topnav">
             <img src="Images/loupe.svg">
-            <input type="text" placeholder="Zoeken..">
-        </div>
+            <input type="text" placeholder="Zoeken.." id="zoekbalk">
 
+        </div>
+        <div class="resultaat"></div>
         <div class="knoppenBachelor">
             <input type="submit" value="1ste Bachelor" class="bachelorEen">
             <input type="submit" value="2de Bachelor" class="bachelorTwee">
             <input type="submit" value="3de Bachelor" class="bachelorDrie">
         </div>
-        <div class="scroll"></div>
-        <div class="eerste"><div class="slideshow-een"></div></div>
-        <div class="tweede"><div class="slideshow-twee"></div></div>
-        <div class="derde"><div class="slideshow-drie"></div></div>
+        <div class="eerste"><div class="slideshow-een projectSearch"></div></div>
+        <div class="tweede"><div class="slideshow-twee projectSearch"></div></div>
+        <div class="derde"><div class="slideshow-drie projectSearch"></div></div>
+        <footer>
+            <a href="https://www.erasmushogeschool.be/nl"><img class="logo" src="Images/Ehb-logowit.png"></a>
+            <a href="https://www.facebook.com/erasmushogeschool"><img src="Images/facebook.svg"></a>
+            <a href="https://twitter.com/ehbrussel?lang=nl"><img src="Images/twitter.svg"></a>
+            <a href="https://www.instagram.com/erasmushogeschool/"><img src="Images/instagram.svg"></a>
+        </footer>
     </body>
 
 </html>
