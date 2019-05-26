@@ -21,9 +21,13 @@ h3{
     border-bottom-width: 0.02px;
     width: 80vw;
     margin: 0 10vw;
-    padding-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+.student:last-child{
+    border-bottom-style: none;
 }
 
 .student h2{
-    margin-top: 30px;
+    margin-top: 20px;
 }
