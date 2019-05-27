@@ -9,6 +9,7 @@ $(function(){
     });
     function zoek(data){
         $("input").on("keyup",function(){
+            $(".eerste,.tweede,.derde").hide();
             $(".resultaat").text("");
             var input, filter, persoon1, persoon2, persoon3;
             input = $(this).val();
@@ -17,6 +18,7 @@ $(function(){
             if(input == ""){
                 console.log("leeg");
                 $(".resultaat").hide();
+                $(".eerste").show();
             }else{
                 $(".resultaat").show();
             }
@@ -33,8 +35,7 @@ $(function(){
             naam = eersteJaar[i].student;
             if (naam.toUpperCase().indexOf(filter) > -1) {
                 console.log("succes");
-                student = eersteJaar[i].student;
-                $(".resultaat").append("<p><a href='#project"+i+"'>"+student+"</a></p>");
+                $(".resultaat").append("<div class='eersteResultaat'><div class='mySlides fade' id='project"+i+"'><img src='Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+eersteJaar[i].project+"</h1><h2>"+eersteJaar[i].student+"</h2><p>"+eersteJaar[i].pojectbeschrijving+"</p><p>"+eersteJaar[i].email+"</p><p>"+eersteJaar[i].telefoonnummer+"</p><p>"+eersteJaar[i].studie+"</p></div>")
             } else {
                 console.log("fail");
             }
@@ -45,9 +46,7 @@ $(function(){
             naam = tweedeJaar[i].student;
             if (naam.toUpperCase().indexOf(filter) > -1) {
                 console.log("succes");
-                student = tweedeJaar[i].student;
-                $(".resultaat").append("<p><a href='#project"+i+"'>"+student+"</a></p>")
-                var id = i;
+                $(".resultaat").append("<div class='tweedeResultaat'><div class='mySlides fade' id='project"+i+"'><img src='Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+tweedeJaar[i].project+"</h1><h2>"+tweedeJaar[i].student+"</h2><p>"+tweedeJaar[i].pojectbeschrijving+"</p><p>"+tweedeJaar[i].email+"</p><p>"+tweedeJaar[i].telefoonnummer+"</p><p>"+tweedeJaar[i].studie+"</p></div>")
             } else {
                 console.log("fail");
             }
@@ -58,9 +57,7 @@ $(function(){
             naam = derdeJaar[i].student;
             if (naam.toUpperCase().indexOf(filter) > -1) {
                 console.log("succes");
-                student = derdeJaar[i].student;
-                $(".resultaat").append("<p><a href='#project"+i+"'>"+student+"</a></p>")
-                var id = i;
+                $(".resultaat").append("<div class='derdeResultaat'><div class='mySlides fade' id='project"+i+"'><img src='Images/"+i+".jpg'><div class='usb-on on"+i+"'><img src='Images/USB-icon.png' id='"+i+"'></div>  <div class='usb-off off"+i+"'><img src='Images/USB-iconZwart.png' id='"+i+"'></div><h1>"+derdeJaar[i].project+"</h1><h2>"+derdeJaar[i].student+"</h2><p>"+derdeJaar[i].pojectbeschrijving+"</p><p>"+derdeJaar[i].email+"</p><p>"+derdeJaar[i].telefoonnummer+"</p><p>"+derdeJaar[i].studie+"</p></div>")
             } else {
                 console.log("fail");
             }
